@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Heading -->
+    <div class="header">
+        <h1>Online Code Editor</h1>
+        <ul class="toggles">
+            <li class="toggle" id="html">HTML</li>
+            <li class="toggle" id="css">CSS</li>
+            <li class="toggle" id="js">JS</li>
+            <li class="toggle" id="result">Result</li>
+        </ul>
+        <button id="run" class="run">Run</button>
+    </div>
+
+    <!-- Horizontal layout for code editors and result -->
+    <div class="codePlayer">
+        <div class="codeContainer" id="htmlContainer">
+            <label class="codeLabel">HTML</label>
+            <textarea id="htmlCode" class="editor" placeholder="Type HTML here..."></textarea>
+        </div>
+        <div class="codeContainer" id="cssContainer">
+            <label class="codeLabel">CSS</label>
+            <textarea id="cssCode" class="editor" placeholder="Type CSS here..."></textarea>
+        </div>
+        <div class="codeContainer" id="jsContainer">
+            <label class="codeLabel">JavaScript</label>
+            <textarea id="jsCode" class="editor" placeholder="Type JS here..."></textarea>
+        </div>
+
+        <!-- Output Result -->
+        <div class="codeContainer" id="resultContainer">
+            <label class="codeLabel">Result</label>
+        <iframe id="result" class="result"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
